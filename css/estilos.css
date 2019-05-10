@@ -1,0 +1,526 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/***********************************************************************/
+/********************FUENTES ESPECIALES********************************/
+@font-face{
+	font-family: regular;
+	src: url(../fonts/gothic.ttf);
+}
+
+@font-face{
+	font-family: negrita;
+	src: url(../fonts/gothicb.ttf);
+}
+/******************************************************************************
+/****************************CONTENEDOR 01 - HEADER****************************/
+.contenedor01{
+	background-image: url(../img/contenedor-header.svg);
+	height: 807px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+}
+
+.contenedor-header{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 40px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "header header"
+						 "texto	 banner"
+}
+
+
+
+.contenedor-header .header{
+	grid-area: header;
+}
+
+
+
+.contenedor-header .header nav ul{
+	list-style: none;
+	margin-top: -50px;
+}
+
+.contenedor-header .header nav ul li{
+	float: right;
+	padding-right: 40px;
+	font-size: 16px;
+	font-family: negrita;
+}
+
+.contenedor-header .header nav ul li a{
+	text-decoration: none;
+	color: white;
+
+
+	
+}
+
+.contenedor-header .texto{
+	grid-area: texto;
+	padding-top: 110px;
+	font-size: 45px;
+	font-family: negrita;
+	
+
+}
+
+.contenedor-header .texto .principal{
+	text-shadow: 0px 0px 5px black;
+}
+
+.contenedor-header .texto .pequeno{
+	
+	font-size: 15px;
+	font-family: regular;
+	padding-top: 12px;
+	padding-bottom: 18px;
+
+}
+
+.contenedor-header .texto .call-to-action{
+	
+
+	font-family: negrita;
+	background-color: #f3d03c;
+	border-radius: 2px;
+	height: 50px;
+	box-shadow: 0px 0px 10px black; 
+
+
+}
+
+.contenedor-header .texto .call-to-action a{
+	
+	font-size: 25px;
+	font-family: negrita;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+}
+
+
+.contenedor-header .banner{
+	grid-area: banner;
+	padding-top: 90px;
+}
+
+.vermas a{
+	width: 150px;
+	height: 50px;
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,160,225,1) 0%, rgba(22,70,212,1) 90.1% );
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	font-family: negrita;
+
+}
+
+.vermas a:hover{
+	
+	background-image: radial-gradient( circle farthest-corner at 48.8% 52%,  rgba(15,13,58,1) 0.1%, rgba(10,14,42,1) 100.2% );
+	
+	
+}
+
+
+/******************************************************************************
+/****************************CONTENEDOR 02 - EBOOK****************************/
+
+.contenedor-ebook{
+	width: 90%;
+	margin: -10px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 6,1fr;
+	grid-template-rows: repeat(4,1fr);
+	grid-template-areas: "titulo 	titulo 	    titulo 	  titulo 	titulo 	  titulo"
+						 "imagenes1 	imagenes2 	imagenes3  imagenes4  imagenes5  imagenes6"
+						 "imagenes7 	imagenes8 	imagenes9  imagenes10  imagenes11  imagenes12"
+						 "vermas	vermas		vermas	  vermas	vermas	  vermas"
+						 
+
+}
+
+.contenedor-ebook .titulo{
+	grid-area: titulo;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	font-size: 33px;
+	font-family: negrita;
+	text-align: center;
+}
+
+.contenedor-ebook .imagenes1
+{
+	grid-area: imagenes1;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes2
+{
+	grid-area: imagenes2;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes3
+{
+	grid-area: imagenes3;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes4
+{
+	grid-area: imagenes4;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes5
+{
+	grid-area: imagenes5;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes6
+{
+	grid-area: imagenes6;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes7
+{
+	grid-area: imagenes7;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes8
+{
+	grid-area: imagenes8;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes9
+{
+	grid-area: imagenes9;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes10
+{
+	grid-area: imagenes10;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes11
+{
+	grid-area: imagenes11;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .imagenes12
+{
+	grid-area: imagenes12;
+	cursor: pointer;
+
+}
+
+.contenedor-ebook .vermas{
+	grid-area: vermas;
+	cursor: pointer;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+/******************************************************************************
+/****************************CONTENEDOR 03 - RECURSOS****************************/
+
+.contenedor03{
+	background-image: url(../img/contenedor-recursos.svg);
+	height: 1976px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	margin-top: -250px;
+
+}
+
+.contenedor-recursos{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 350px;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-template-areas: 	"recurso01		texto01"
+							"texto02		recurso02"
+						 	"recurso03		texto03"
+
+
+
+}
+
+.contenedor-recursos .recurso01{
+	grid-area: recurso01;
+}
+
+.contenedor-recursos .texto01{
+	grid-area: texto01;
+	font-size: 18px;
+	font-family: regular;
+	padding-top: 25px;
+
+	
+}
+
+.contenedor-recursos .texto01 h1{
+	font-size: 35px;
+	font-family: negrita;
+
+	
+}
+
+
+.contenedor-recursos .recurso02{
+	grid-area: recurso02;
+}
+
+.contenedor-recursos .texto02{
+	grid-area: texto02;
+	font-size: 18px;
+	font-family: regular;
+	padding-top: 70px;
+}
+
+.contenedor-recursos .texto02 h1{
+	font-size: 35px;
+	font-family: negrita;
+	
+	
+}
+
+
+.contenedor-recursos .recurso03{
+	grid-area: recurso03;
+}
+
+.contenedor-recursos .texto03{
+	grid-area: texto03;
+	font-size: 18px;
+	font-family: regular;
+	padding-top: 70px;
+}
+
+.contenedor-recursos .texto03 h1{
+	font-size: 35px;
+	font-family: negrita;
+
+	
+}
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 04 - VIDEO****************************/
+
+.contenedor-video{
+	width: 90%;
+	margin: -10px auto;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1, 1fr;
+	grid-template-rows: 1, 1fr;
+	grid-template-areas: "titulo-video"
+						 
+
+}
+
+.contenedor-video .titulo-video{
+	grid-area: titulo-video;
+	font-size: 33px;
+	font-family: negrita;
+	text-align: center;
+
+}
+
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 05 - TESTIMONIO****************************/
+
+
+.contenedor05{
+	background-image: url(../img/contenedor-testimonios.svg);
+	height: 1068px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: black;
+
+}
+
+.contenedor-testimonios{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 190px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "titulotestimonios titulotestimonios"
+						 "testimonios		testimonios"
+}
+
+.contenedor-testimonios .titulotestimonios{
+	grid-area: titulotestimonios;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 33px;
+	font-family: negrita;
+}
+
+.contenedor-testimonios .testimonios{
+	grid-area: testimonios;
+	height: 500px;
+	background-color: white;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-family: regular;
+}
+
+/******************************************************************************
+/****************************CONTENEDOR 06 - PRICING****************************/
+
+
+.contenedor-pricing{
+	width: 90%;
+	margin: 360px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "titulo-pricing 	titulo-pricing"
+						 "imagenpricing		imagenpricing"
+
+}
+
+.contenedor-pricing .titulo-pricing{
+	grid-area: titulo-pricing;
+	text-align: center;
+	margin-top: -130px;
+}
+
+.contenedor-pricing .titulo-pricing h1{
+	font-family: negrita;
+	font-size: 33px;
+}
+
+.contenedor-pricing .titulo-pricing h3{
+	font-family: regular;
+
+}
+
+.contenedor-pricing .imagenpricing{
+	grid-area: imagenpricing;
+	text-align: center;
+	padding: 0px 60px;
+	
+}
+
+/******************************************************************************
+/****************************CONTENEDOR 07 - FOOTER****************************/
+
+.contenedor07{
+	background-image: url(../img/footer.svg);
+	height: 500px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+
+}
+
+
+.contenedor-footer{
+	width: 90%;
+	margin-top: 520px;
+	padding-top: 250px;
+	margin-left: 50px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "menu1  menu2	menu3"
+						 
+}
+
+.contenedor-footer .menu1{
+	grid-area: menu1;
+
+}
+
+.contenedor-footer .menu2{
+	grid-area: menu2;
+}
+
+.contenedor-footer .menu3{
+	grid-area: menu3;
+}
+
+.contenedor-footer h1{
+	font-family: negrita;
+	text-align: left;
+
+}
+
+.contenedor-footer ul li{
+	list-style: none;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.contenedor-footer ul li a{
+	list-style: none;
+	font-family: regular;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+
+
+}

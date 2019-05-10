@@ -1,0 +1,299 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/***********************************************************************/
+/********************FUENTES ESPECIALES********************************/
+@font-face{
+	font-family: regular;
+	src: url(../fonts/gothic.ttf);
+}
+
+@font-face{
+	font-family: negrita;
+	src: url(../fonts/gothicb.ttf);
+}
+/******************************************************************************
+/****************************CONTENEDOR 01 - HEADER****************************/
+.contenedor01{
+	background-image: url(../img/contenedor-header2.svg);
+	height: 300px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+}
+
+.contenedor-header{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 40px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "header header"
+						 
+}
+
+
+
+.contenedor-header .header{
+	grid-area: header;
+}
+
+
+
+.contenedor-header .header nav ul{
+	list-style: none;
+	margin-top: -50px;
+}
+
+.contenedor-header .header nav ul li{
+	float: right;
+	padding-right: 40px;
+	font-size: 16px;
+	font-family: negrita;
+}
+
+.contenedor-header .header nav ul li a{
+	text-decoration: none;
+	color: white;
+
+
+	
+}
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 02 - BOOKSTORE****************************/
+.contenedor02{
+	background-color: #080609;
+	height: 850px;
+	margin-top: -20px; 
+	color: white;
+
+}
+
+.contenedor-bookstore{
+
+	width: 90%;
+	margin: 10px 0px;
+	padding-top: 20px;
+	padding-left: 5px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1, 1fr;
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "fila01"
+						 "fila02"
+						 "fila03"
+}
+
+.contenedor-bookstore .fila01{
+	grid-area: fila01;
+	display: flex;
+	margin-bottom: 10px;
+}
+
+.contenedor-bookstore .fila01 .cuadro{
+	background-color: #27272b;
+	width: 162px;
+	height: 270px;
+	margin-top: -20px;
+	margin-right: 5px;
+	font-family: negrita;
+
+}
+
+.contenedor-bookstore .fila01 .cuadro img{
+	margin-left: 5px;
+}
+
+.contenedor-bookstore .fila01 .cuadro p{
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+
+
+.contenedor-bookstore .fila02{
+	grid-area: fila02;
+	display: flex;
+	margin-bottom: 10px;
+
+}
+
+.contenedor-bookstore .fila02 .cuadro{
+	background-color: #27272b;
+	width: 162px;
+	height: 270px;
+	margin-top: -20px;
+	margin-right: 5px;
+	font-family: negrita;
+}
+
+.contenedor-bookstore .fila02 .cuadro img{
+	margin-left: 5px;
+}
+
+.contenedor-bookstore .fila02 .cuadro p{
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+
+.contenedor-bookstore .fila03{
+	grid-area: fila03;
+	display: flex;
+}
+
+.contenedor-bookstore .fila03 .cuadro{
+	background-color: #27272b;
+	width: 162px;
+	height: 270px;
+	margin-top: -20px;
+	margin-right: 5px;
+	font-family: negrita;
+}
+
+.contenedor-bookstore .fila03 .cuadro img{
+	margin-left: 5px;
+}
+.contenedor-bookstore .fila03 .cuadro p{
+	margin-left: 5px;
+	font-size: 12px;
+}
+
+
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 03 - COMING SOON****************************/
+
+.contenedor03{
+	background-image: url(../img/comingsoon.svg);
+	height: 777px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+
+}
+
+.contenedor-coming{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 150px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat 1, auto;
+	grid-template-areas: "imagen  texto"
+						 
+}
+
+.contenedor-coming .imagen{
+	grid-area: imagen;
+	
+}
+
+.contenedor-coming .imagen img{
+	box-shadow: 0px 10px 40px 10px #1725cc;
+	border-radius: 15px;
+}
+
+
+
+.contenedor-coming .texto{
+	grid-area: texto;
+	font-family: regular;
+}
+
+.contenedor-coming .texto h1{
+	font-family: negrita;
+
+}
+
+.contenedor-coming .texto a{
+	font-family: negrita;
+	color: black;
+	background-color: white;
+	padding: 10px 20px;
+	border-radius: 15px;
+	text-decoration: none;
+}
+
+.contenedor-coming .texto a:hover{
+	
+	color: white;
+	background-color:#1725cc; 
+	
+	
+}
+
+
+/******************************************************************************
+/****************************CONTENEDOR 04 - FOOTER****************************/
+
+.contenedor07{
+	background-image: url(../img/footer.svg);
+	height: 500px;
+	margin-top: -500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+
+}
+
+
+.contenedor-footer{
+	width: 90%;
+	margin-top: 520px;
+	padding-top: 250px;
+	margin-left: 50px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "menu1  menu2	menu3"
+						 
+}
+
+.contenedor-footer .menu1{
+	grid-area: menu1;
+
+}
+
+.contenedor-footer .menu2{
+	grid-area: menu2;
+}
+
+.contenedor-footer .menu3{
+	grid-area: menu3;
+}
+
+.contenedor-footer h1{
+	font-family: negrita;
+	text-align: left;
+
+}
+
+.contenedor-footer ul li{
+	list-style: none;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.contenedor-footer ul li a{
+	list-style: none;
+	font-family: regular;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+
+
+}

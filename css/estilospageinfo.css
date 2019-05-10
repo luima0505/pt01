@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/***********************************************************************/
+/********************FUENTES ESPECIALES********************************/
+@font-face{
+	font-family: regular;
+	src: url(../fonts/gothic.ttf);
+}
+
+@font-face{
+	font-family: negrita;
+	src: url(../fonts/gothicb.ttf);
+}
+/******************************************************************************
+/****************************CONTENEDOR 01 - HEADER****************************/
+.contenedor01{
+	background-image: url(../img/contenedor-header.svg);
+	height: 807px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+}
+
+.contenedor-header{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 40px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "header header"
+						 "texto	 banner"
+}
+
+
+
+.contenedor-header .header{
+	grid-area: header;
+}
+
+
+
+.contenedor-header .header nav ul{
+	list-style: none;
+	margin-top: -50px;
+}
+
+.contenedor-header .header nav ul li{
+	float: right;
+	padding-right: 40px;
+	font-size: 16px;
+	font-family: negrita;
+}
+
+.contenedor-header .header nav ul li a{
+	text-decoration: none;
+	color: white;
+
+
+	
+}
+
+.contenedor-header .texto{
+	grid-area: texto;
+	padding-top: 110px;
+	font-size: 45px;
+	font-family: negrita;
+	
+
+}
+
+.contenedor-header .texto .principal{
+	text-shadow: 0px 0px 5px black;
+}
+
+.contenedor-header .texto .pequeno{
+	
+	font-size: 15px;
+	font-family: regular;
+	padding-top: 12px;
+	padding-bottom: 18px;
+
+}
+
+.contenedor-header .texto .call-to-action{
+	
+
+	font-family: negrita;
+	background-color: #f3d03c;
+	border-radius: 2px;
+	height: 50px;
+	box-shadow: 0px 0px 10px black; 
+
+
+}
+
+.contenedor-header .texto .call-to-action a{
+	
+	font-size: 25px;
+	font-family: negrita;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+}
+
+
+.contenedor-header .banner{
+	grid-area: banner;
+	padding-top: 90px;
+}
+
+
+/******************************************************************************
+/****************************CONTENEDOR 02 - INFO****************************/
+
+.contenedor-info{
+	width: 90%;
+	margin: 50px auto;
+	display: grid;
+	grid-gap: 10px;
+	grid-template-columns: 1,1fr;
+	grid-template-rows: repeat(1,1fr);
+	grid-template-areas: "texto"
+						
+						 
+
+}
+
+.contenedor-info .texto{
+	grid-area: texto;
+	
+	
+
+	font-size: 18px;
+	font-family: regular;
+	
+}
+
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 07 - FOOTER****************************/
+
+.contenedor07{
+	background-image: url(../img/footer.svg);
+	height: 500px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+
+}
+
+
+.contenedor-footer{
+	width: 90%;
+	margin-top: 150px;
+	padding-top: 250px;
+	margin-left: 50px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "menu1  menu2	menu3"
+						 
+}
+
+.contenedor-footer .menu1{
+	grid-area: menu1;
+
+}
+
+.contenedor-footer .menu2{
+	grid-area: menu2;
+}
+
+.contenedor-footer .menu3{
+	grid-area: menu3;
+}
+
+.contenedor-footer h1{
+	font-family: negrita;
+	text-align: left;
+
+}
+
+.contenedor-footer ul li{
+	list-style: none;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.contenedor-footer ul li a{
+	list-style: none;
+	font-family: regular;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+
+
+}

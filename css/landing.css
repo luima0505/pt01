@@ -1,0 +1,276 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/***********************************************************************/
+/********************FUENTES ESPECIALES********************************/
+@font-face{
+	font-family: regular;
+	src: url(../fonts/gothic.ttf);
+}
+
+@font-face{
+	font-family: negrita;
+	src: url(../fonts/gothicb.ttf);
+}
+/******************************************************************************
+/****************************CONTENEDOR 01 - HEADER****************************/
+.contenedor01{
+	background-image: url(../img/headerlanding01.svg);
+	height: 807px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+
+}
+
+.contenedor-header{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 40px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(2, auto);
+	grid-template-areas: "header header"
+						 "banner texto"
+}
+
+
+
+.contenedor-header .header{
+	grid-area: header;
+}
+
+
+
+.contenedor-header .header nav ul{
+	list-style: none;
+	margin-top: -50px;
+}
+
+.contenedor-header .header nav ul li{
+	float: right;
+	padding-right: 40px;
+	font-size: 16px;
+	font-family: negrita;
+}
+
+.contenedor-header .header nav ul li a{
+	text-decoration: none;
+	color: white;
+
+
+	
+}
+
+.contenedor-header .texto{
+	grid-area: texto;
+	padding-top: 110px;
+	font-size: 45px;
+	font-family: negrita;
+	
+
+}
+
+.contenedor-header .texto .principal{
+	text-shadow: 0px 0px 5px black;
+}
+
+.contenedor-header .texto .pequeno{
+	
+	font-size: 15px;
+	font-family: regular;
+	padding-top: 12px;
+	padding-bottom: 18px;
+
+}
+
+.contenedor-header .texto .call-to-action{
+	
+
+	font-family: negrita;
+	background-color: #f3d03c;
+	border-radius: 2px;
+	height: 50px;
+	box-shadow: 0px 0px 10px black; 
+
+
+}
+
+.contenedor-header .texto .call-to-action a{
+	
+	font-size: 25px;
+	font-family: negrita;
+	text-decoration: none;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 8px;
+}
+
+
+.contenedor-header .banner{
+	grid-area: banner;
+	padding-top: 40px;
+}
+
+.vermas a{
+	width: 150px;
+	height: 50px;
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,160,225,1) 0%, rgba(22,70,212,1) 90.1% );
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+	font-family: negrita;
+
+}
+
+.vermas a:hover{
+	
+	background-image: radial-gradient( circle farthest-corner at 48.8% 52%,  rgba(15,13,58,1) 0.1%, rgba(10,14,42,1) 100.2% );
+	
+	
+}
+
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 02 - MODULOS****************************/
+.contenedor-modulos{
+	width: 90%;
+	margin: 20px auto;
+	padding-top: 40px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1, 1fr;
+	grid-template-rows: 1,auto ;
+	grid-template-areas: "module"
+						 
+}
+
+.contenedor-modulos .module{
+	grid-area: module;
+	margin-left: 40px;
+	
+}
+
+.contenedor-modulos .module .ms{
+	background-color: #fafafa;
+	font-family: negrita;
+	float: left;
+	margin-right: 25px;
+	margin-bottom: 25px;
+	width: 260px;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 10px 6px -6px #777;
+	
+}
+
+.contenedor-modulos .module .ms h3,h4{
+	text-align: center;
+	padding-top: 8px;
+	
+}
+
+.contenedor-modulos .module .ms .icono{
+	padding: 10px 45px;
+	
+}
+
+.contenedor-modulos .module .ms p{
+	font-family: regular;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-bottom: 20px;
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: left;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************************************
+/****************************CONTENEDOR 07 - FOOTER****************************/
+
+.contenedor07{
+	background-image: url(../img/footerlanding.svg);
+	height: 500px;
+	margin-top: -20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color:white;
+
+}
+
+
+.contenedor-footer{
+	width: 90%;
+	margin-top: 520px;
+	padding-top: 250px;
+	margin-left: 50px;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(1, auto);
+	grid-template-areas: "menu1  menu2	menu3"
+						 
+}
+
+.contenedor-footer .menu1{
+	grid-area: menu1;
+
+}
+
+.contenedor-footer .menu2{
+	grid-area: menu2;
+}
+
+.contenedor-footer .menu3{
+	grid-area: menu3;
+}
+
+.contenedor-footer h1{
+	font-family: negrita;
+	text-align: left;
+
+}
+
+.contenedor-footer ul li{
+	list-style: none;
+	text-align: left;
+	padding-top: 20px;
+}
+
+.contenedor-footer ul li a{
+	list-style: none;
+	font-family: regular;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+
+
+}

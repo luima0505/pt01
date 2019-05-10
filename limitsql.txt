@@ -1,0 +1,14 @@
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 2,2
+						    OFFSET 2, ROW-COUNT 2
+
+*****************************************************************************************
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 6
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 6,6
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 12,6
+
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 18,6
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 24,6
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 30,6
+***********************************************************************************************
+	
+SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 2
