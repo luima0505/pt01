@@ -12,3 +12,5 @@ SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 30,6
 ***********************************************************************************************
 	
 SELECT * FROM `tblproductos` ORDER BY id DESC LIMIT 2
+
+HOLA LUIS 
